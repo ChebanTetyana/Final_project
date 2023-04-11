@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link type="Image/x-icon" href="assets/img/favicon.ico" rel="icon">
+    <link href="./node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+    <title>Project_2</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="./js/maps_api.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__body">
+                <a href="#" class="header__logo">
+                    <img src="./assets/img/logo.webp" alt="" class="header__img">
+                </a>
+                <nav class="header__menu">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">Home</a>
+                        </li>
+                        <li class="header__item">                           
+                            <a href="#session" class="header__link">Sessions</a>
+                        </li>
+                        <li class="header__item">                          
+                            <a href="#feedback" class="header__link">Feedback</a>
+                        </li>
+                         <li class="header__item">
+                            <a href="#about" class="header__link">About us</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#price" class="header__link">Prices</a>
+                        </li>
+                        <li class="header__item">                          
+                            <a href="#contacts" class="header__link">Contacts</a>
+                        </li>
+                    </ul>    
+                </nav>
+                <button class="btn add" onClick={handleShow}>Book a session</button>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="slider">          
+            <div class="slider-slide">
+                <div class="slider__content sl-content">
+                    <h4 class="sl-content subtitle"><img src="./assets/img/Rectangle-3.webp" alt="Rectangle"  class="sl-content leaf">Health promotion<img src="./assets/img/Rectangle-5.webp" alt="Rectangle" class="sl-content leaf"></h4>
+                    <h2 class="sl-content title"> Aquatherapy <br> RitmStyle  </h2>
+                   
+                </div>
+                <img src="./assets/img/img_header_1.webp" alt="" class="slider-slide__img">
+            </div>
+            <div class="slider-slide">
+                <div class="slider__content sl-content">
+                    <h4 class="sl-content subtitle"><img src="./assets/img/Rectangle-3.webp" alt="Rectangle" class="sl-content leaf">Sport<img src="./assets/img/Rectangle-5.webp" alt="Rectangle" class="sl-content leaf"></h4>
+                    <h2 class="sl-content title"> Aquatherapy <br> RitmStyle </h2>
+                </div>
+                <img src="./assets/img/img_header_2.webp" alt="" class="slider-slide__img">
+            </div>
+            <div class="slider-slide"> 
+                <div class="slider__content sl-content">
+                    <h4 class="sl-content subtitle"><img src="./assets/img/Rectangle-3.webp" alt="Rectangle" class="sl-content leaf">Relax<img src="./assets/img/Rectangle-5.webp" alt="Rectangle" class="sl-content leaf">
+                    </h4>
+                    <h2 class="sl-content title"> Aquatherapy <br> RitmStyle </h2>
+                </div>
+                <img src="./assets/img/img_header_3.webp" alt="" class="slider-slide__img">
+            </div>
+            <div class="slider-slide">
+                <div class="slider__content sl-content">
+                    <h4 class="sl-content subtitle"><img src="./assets/img/Rectangle-3.webp" alt="Rectangle" class="sl-content leaf">Profession sport <img src="./assets/img/Rectangle-5.webp" alt="Rectangle" class="sl-content leaf">
+                    </h4>
+                    <h2 class="sl-content title"> Aquatherapy <br> RitmStyle </h2>
+                </div>    
+                <img src="./assets/img/img_header_4.webp" alt="" class="slider-slide__img">
+            </div>      
+        </section>
+        <div class="btn down">
+            <a href="#arrow" class="down__link"></a>
+        </div>
+        <section class="content" id="session">
+            <div class="container">
+                <h2 class="title title_before" id="arrow"><img src="./assets/img/Rectangle-6.webp" alt="Rectangle" class="leaf">Sessions<img src="./assets/img/Rectangle-7.webp" alt="Rectangle" class="leaf"></h2>
+                <div class="galery">
+                    <a class="example-image-link square" href="./node_modules/lightbox2/dist/images/img_gal_1.webp"
+                        data-lightbox="example-set" data-title="Swimming for children">
+                        <img class="example-image" src="./node_modules/lightbox2/dist/images/img_gal_1.webp" alt="">
+                    </a>
+                    <a class="example-image-link" href="./node_modules/lightbox2/dist/images/img_gal_2.webp"
+                        data-lightbox="example-set" data-title="Professional swimming">
+                        <img class="example-image" src="./node_modules/lightbox2/dist/images/img_gal_2.webp" alt="">
+                    </a>
+                    <a class="example-image-link" href="./node_modules/lightbox2/dist/images/img_gal_3.webp"
+                        data-lightbox="example-set" data-title="Underwater photography">
+                        <img class="example-image" src="./node_modules/lightbox2/dist/images/img_gal_3.webp" alt="">
+                    </a>
+                    <a class="example-image-link" href="./node_modules/lightbox2/dist/images/img_gal_4.webp"
+                        data-lightbox="example-set" data-title="Swimming for a couple">
+                        <img class="example-image" src="./node_modules/lightbox2/dist/images/img_gal_4.webp" alt="">
+                    </a>
+                    <a class="example-image-link" href="./node_modules/lightbox2/dist/images/img_gal_5.webp" data-lightbox="example-set"
+                        data-title="Professional photoshoot">
+                        <img class="example-image" src="./node_modules/lightbox2/dist/images/img_gal_5.webp" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="feedback" id="feedback">
+            <div class="container">
+                <h2 class="title title_before"><img src="./assets/img/Rectangle-6.webp" alt="Rectangle"
+                        class="leaf">Feedback<img src="./assets/img/Rectangle-7.webp" alt="Rectangle" class="leaf"></h2>
+                <div class="slider__block">
+                    <div class="slider__card">
+                        <div class="slider__card_wrapper">                          
+                            <div class="slider__description">
+                                <h4 class="title sup-title">Kira Punzeva</h4>
+                                <p class="text">I want to say a huge thank you to all the staff of this wonderful pool. I have been visiting this pool almost since the
+                                day it opened, it has always been clean, <br>tidy and friendly staff, and I am glad that although people change here, time
+                                changes, but it is still pleasant to go to this pool</p>       
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__card_wrapper">
+                            <div class="slider__description">
+                                <h4 class="title sup-title">Ilya Andreev</h4>
+                                <p class="text">Our favorite pool! The cleanest in the Odesa region. There are 2 baths for kids and for adults. Periodically,
+                                there are competitions that you can watch.<br> Thank you for your good work.</p>                             
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__card_wrapper">                          
+                            <div class="slider__description">
+                                <h4 class="title sup-title">Elena Ermakova</h4>
+                                <p class="text">In my review, I would like to express my gratitude to all the employees of the sports complex, but especially thank
+                                the administration,<br> they organized everythink so competently, I never cease to be amazed at the cleanliness, affordability,
+                                courtesy and individual approach to each visitor.<br> The best gym in our area!</p>                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider__card">
+                        <div class="slider__card_wrapper">                           
+                            <div class="slider__description">
+                                <h4 class="title sup-title">Petr Avdeev</h4>
+                                <p class="text">I like everything very much. Especially the pool - the water is clean, it does not smell of bleach at all, the showers
+                                and changing rooms are in order, <br>cleaning is done in a timely manner. The team works well together and communicates
+                                politely with visitors.
+                                </p>                             
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </section> 
+        <section class="about" id="about">
+            <div class="container">
+            <h2 class="title title_before"><img src="./assets/img/Rectangle-6.webp" alt="Rectangle"
+                    class="leaf">About RitmStyle<img src="./assets/img/Rectangle-7.webp" alt="Rectangle" class="leaf"></h2>
+                <div class="about__block d-flex">
+                    <div class="about__block_img">
+                        <img src="./assets/img/pr_bg_first.png" alt="" class="about__bg">
+                        <img src="./assets/img/pr_img_first.webp" alt="" class="about__img">
+                    </div>
+                    <div class="about__block_text">
+                        <h4  class="title sup-title">RitmStyle massage</h4>                      
+                        <p class="text text_hide">Massage restores tired muscles, increases their efficiency, elasticity, regulates blood circulation in strengthens ligaments. Psycho-emotional state, mood and well-being are improved after a course of massage.
+                        Massage also improves cerebral circulation and the nervous system.</p>
+                        <button class="btn add">MORE DETAILS</button>                    
+                    </div>
+                </div>
+                <div class="about__block d-flex reverse">
+                    <div class="about__block_img">
+                        <img src="./assets/img/pr_bg_first.png" alt="" class="about__bg sec">
+                        <img src="./assets/img/pr_img_sec.webp" alt="" class="about__img">
+                    </div>
+                    <div class="about__block_text">
+                        <h4 class="title sup-title">RitmStyle hydrotherapy</h4>                     
+                        <p class="text text_hide">Hydrotherapy relaxes tense muscles and helps them recover faster from a pulse or increased activity such as running or
+                        exercising at the gym. Increased circulation also helps remove waste from the body, promote overall health, keep your organs clean and healthy,
+                        and improve overall health.</p>
+                        <button class="btn add">MORE DETAILS</button>                      
+                    </div>
+                </div>  
+            </div> 
+        </section>
+        <section class="price" id="price">
+            <div class="container">
+                <h2 class="title title_before"><img src="./assets/img/Rectangle-6.webp" alt="Rectangle" class="leaf">Prices<img src="./assets/img/Rectangle-7.webp" alt="Rectangle" class="leaf"></h2>
+                <div class="price__block">
+                    <div class="price__content">
+                        <div class="d-flex">
+                            <span><img src="./assets/img/Rectangle-31.webp" alt="" class="price__img">RitmStyle with submersion</span>
+                            <p>1000 &#8372;</p>
+                        </div> 
+                        <div class="d-flex">
+                            <span><img src="./assets/img/Rectangle-31.webp" alt="" class="price__img">Subscription to RitmStyle</span>
+                            <p>3500 &#8372;</p>
+                        </div>
+                        <div class="d-flex">
+                            <span><img src="./assets/img/Rectangle-31.webp" alt="" class="price__img">RitmStyle for children</span>
+                            <p>1000 &#8372;</p>
+                        </div>
+                        <div class="d-flex">
+                            <span><img src="./assets/img/Rectangle-31.webp" alt="" class="price__img">RitmStyle for couple</span>
+                            <p>800 &#8372;</p>
+                        </div> 
+                        <div class="d-flex">
+                            <span><img src="./assets/img/Rectangle-31.webp" alt="" class="price__img">Photosession with RitmStyle</span>
+                            <p>700 &#8372;</p>                           
+                        </div>
+                    </div>
+                    <div>
+                        <div class="d-flex col ">
+                            <img src="./assets/img/gift_card.webp" alt="" class="price__img_main">
+                            <h4 class="title sup-title">Gift card</h4>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="contacts">
+        <div class="container">
+           <div class="footer__grid">
+                <div class="map" id="map"></div>
+                <div class="d-flex col">
+                    <h3 class="title subtitle">Swimming Pool</h3>
+                    <p class="text"><i class="fa-solid fa-location-dot"></i> Deribasovskaya str. 6 </p>
+                    <p class="text"><i class="fa-solid fa-bus"></i> Bus stop: "Deribsovskaya"</p>
+                    <p class="text"><i class="fa-solid fa-pen-to-square"></i> Pre-registration</p>
+                    <button class="btn add" type="submit">SUBMIT</button>
+                </div>
+                <div class="d-flex col">
+                    <h3 class="title subtitle">Swimming Center</h3>
+                    <p class="text"><i class="fa-solid fa-location-dot"></i> Zabolotnogo str. 26 </p>
+                    <p class="text"><i class="fa-solid fa-bus"></i> Bus stop: "Zabolotnogo"</p>
+                    <p class="text"><i class="fa-solid fa-pen-to-square"></i> Pre-registration</p>
+                    <button class="btn add" type="submit">SUBMIT</button>
+                </div>
+            </div>
+            <div class="footer__content d-flex">
+                <div class="logo">
+                    <a href="#" class="header__logo">
+                        <img src="./assets/img/logo.webp" alt="" class="header__img">
+                        <p class="text">Copyrights © 2023 RitmStyle</p>
+                    </a>
+                </div>
+                <div>
+                    <ul class="icons">
+                        <li class="icons__item">
+                            <a href="" class="icons__link"><svg width="10" height="16" viewBox="0 0 10 16">
+                                    <use xlink:href="./assets/img/svg/media-sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icons__item">
+                            <a href="" class="icons__link"><svg width="16" height="14" viewBox="0 0 16 14">
+                                    <use xlink:href="./assets/img/svg/media-sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="icons__item">
+                            <a href="" class="icons__link"><svg width="15" height="14" viewBox="0 0 15 14">
+                                    <use xlink:href="./assets/img/svg/media-sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <div id="btn_up1" hidden></div>
+
+    <script src="./js/jquery.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>    
+    <script src="./js/main.js"></script>
+    <script src="./js/burger.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/maps_api.js"></script>
+    <script src="https://kit.fontawesome.com/fb71a878ad.js" crossorigin="anonymous"></script>
+    <script src="./js/scroll.js"></script>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbL6XamasqSOwjzivSpC7lk3zav76iSXE&callback=initMap">
+    </script>
+    <script src="./node_modules/lightbox2/dist/js/lightbox.js"></script>
+   
+</body>
+</html>
+
