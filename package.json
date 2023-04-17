@@ -1,5 +1,15 @@
 {
+ "homepage": "https://ChebanTetyana.github.io/final_project",
+ 
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  
   "dependencies": {
     "lightbox2": "^2.11.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
